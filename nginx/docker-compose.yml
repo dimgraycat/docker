@@ -11,6 +11,8 @@ services:
       - ./config/default.conf:/etc/nginx/conf.d/default.conf
       - ../var/html:/var/www/html
       - ../var/logs/nginx:/var/log/nginx
+    environment:
+      TZ: Asia/Tokyo
     networks:
       dmgct_network:
         ipv4_address: 172.23.0.2
