@@ -1,2 +1,10 @@
+# php
 .php_cs.cache
+
+# nginx
 var/logs/nginx/*.log
+
+# https-portal
+https-portal/certs/*
+!https-portal/certs/dmgct.local.pem
+!https-portal/certs/dmgct.local-key.pem

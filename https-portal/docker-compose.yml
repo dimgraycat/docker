@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  https-portal:
+    image: steveltn/https-portal:1
+    container_name: dmgct-https-portal
+    ports:
+      - '80:80'
+      - '443:443'
+#    depends_on:
+#      - nginx
+    restart: always
+    environment:
+      TZ: Asia/Tokyo
+      STAGE: local
+      HSTS_MAX_AGE: 60
+      DOMAINS: >-
+        dmgct.local -> http://nginx:8000
+    volumes:
+      - ./certs:/var/lib/https-portal
+    networks:
+      dmgct_network:
+        ipv4_address: 172.23.0.5
+networks:
+  dmgct_network:
+    external: true
