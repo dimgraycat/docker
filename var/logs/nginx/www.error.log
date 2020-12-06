@@ -1,5 +1,0 @@
-2020/12/06 06:35:25 [error] 6#6: *2 "/var/www/html/www/index.html" is not found (2: No such file or directory), client: 172.23.0.1, server: _, request: "GET / HTTP/1.1", host: "127.0.0.1:8000"
-2020/12/06 06:35:25 [error] 6#6: *2 open() "/var/www/html/www/favicon.ico" failed (2: No such file or directory), client: 172.23.0.1, server: _, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1:8000", referrer: "http://127.0.0.1:8000/"
-2020/12/06 06:35:30 [error] 6#6: *2 "/var/www/html/www/index.html" is not found (2: No such file or directory), client: 172.23.0.1, server: _, request: "GET / HTTP/1.1", host: "127.0.0.1:8000"
-2020/12/06 06:35:37 [error] 6#6: *2 "/var/www/html/www/index.html" is not found (2: No such file or directory), client: 172.23.0.1, server: _, request: "GET / HTTP/1.1", host: "127.0.0.1:8000"
-2020/12/06 06:38:25 [error] 6#6: *3 open() "/var/www/html/www/index.html" failed (2: No such file or directory), client: 172.23.0.1, server: _, request: "GET /index.html HTTP/1.1", host: "127.0.0.1:8000"

@@ -1,2 +1,2 @@
 .php_cs.cache
-var/logs/*/*.log
+var/logs/nginx/*.log
