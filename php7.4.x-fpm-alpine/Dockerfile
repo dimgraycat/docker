@@ -1,5 +1,9 @@
 FROM php:7.4.13-fpm-alpine3.12
 
+RUN apk --no-cache add tzdata && \
+    cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime && \
+    apk del tzdata
+
 RUN apk add --update --no-cache \
         autoconf \
         gcc \

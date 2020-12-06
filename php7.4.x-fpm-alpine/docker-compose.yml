@@ -7,8 +7,6 @@ services:
       dockerfile: ./Dockerfile
     volumes:
       - ../var/html:/var/www/html
-    environment:
-      TZ: Asia/Tokyo
     networks:
       dmgct_network:
         ipv4_address: 172.23.0.10
