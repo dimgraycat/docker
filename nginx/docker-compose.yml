@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  nginx:
+    container_name: dmgct-nginx
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - '8000:8000'
+    volumes:
+      - ./config/default.conf:/etc/nginx/conf.d/default.conf
+      - ../var/html:/var/www/html
+      - ../var/logs/nginx:/var/log/nginx
+    networks:
+      dmgct_network:
+        ipv4_address: 172.23.0.2
+networks:
+  dmgct_network:
+    external: true

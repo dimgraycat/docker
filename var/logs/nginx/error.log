@@ -1,0 +1,4 @@
+2020/12/06 07:25:00 [emerg] 1#1: open() "/etc/nginx/conf.d/default.conf" failed (1: Operation not permitted) in /etc/nginx/nginx.conf:31
+2020/12/06 07:34:01 [emerg] 1#1: open() "/etc/nginx/conf.d/default.conf" failed (1: Operation not permitted) in /etc/nginx/nginx.conf:31
+2020/12/06 07:35:13 [emerg] 1#1: open() "/etc/nginx/conf.d/default.conf" failed (1: Operation not permitted) in /etc/nginx/nginx.conf:31
+2020/12/06 07:36:02 [emerg] 1#1: open() "/etc/nginx/conf.d/default.conf" failed (1: Operation not permitted) in /etc/nginx/nginx.conf:31
