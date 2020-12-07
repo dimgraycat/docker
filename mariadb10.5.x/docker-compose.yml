@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  db:
+    container_name: dmgct-mariadb
+    image: mariadb:10.5.8
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_DATABASE: dmgct_database
+      MYSQL_USER: user
+      MYSQL_PASSWORD: testtest
+      MYSQL_ROOT_PASSWORD: testtest
+    networks:
+      dmgct_network:
+        ipv4_address: 172.23.0.50
+networks:
+  dmgct_network:
+    external: true
